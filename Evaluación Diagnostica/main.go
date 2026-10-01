@@ -10,6 +10,8 @@ func main() {
 	fmt.Println("2. Mostrar estadísticas")
 	fmt.Println("3. Salir")
 	var usrOpcion int
+	subtotal := []float64{}
+	nombresProductos := []string{}
 	for {
 		fmt.Println("Que deseas hacer (Ingresa un numero): ")
 		fmt.Scan(&usrOpcion)
@@ -26,9 +28,10 @@ func main() {
 			fmt.Scan(&usrOpcionProducto)
 			fmt.Printf("Que cantidad has vendido: ")
 			fmt.Scan(&cantidadVendida)
-
 		} else if usrOpcion == 2 {
-
+			fmt.Printf("Que quieres hacer: ")
+			fmt.Println("1. Calcular el mostrar y total recaudado")
+			fmt.Println("2. Mostrar Estadistica")
 		} else {
 			break
 		}
